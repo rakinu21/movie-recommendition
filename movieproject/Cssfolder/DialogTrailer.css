@@ -1,0 +1,73 @@
+
+
+#dialog-overlay {
+    position: fixed;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+	top: 50%;
+	left: 50%;
+    background-color: #131313;
+    width: 70%;
+    height: 80%;
+
+  z-index: 1;
+ 
+}
+
+
+
+/* animations */
+
+/* opening a dialog */
+#dialog-overlay[open],
+#dialog-overlay[open]::backdrop {
+	animation: fade-in 250ms forwards;
+}
+
+/* closing a dialog */
+#dialog-overlay[open].close-animate,
+#dialog-overlay[open].close-animate::backdrop {
+	animation: fade-out 250ms forwards;
+}
+
+@keyframes fade-in {
+	0% {
+		transform: translate(-50%, -10%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(-50%, -50%);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	0% {
+		transform: translate(-50%, -50%);
+		opacity: 1;
+	}
+	100% {
+		transform: translate(-50%, -10%);
+		opacity: 0;
+		display: none;
+	}
+}
+
+
+#close-dialogBtn{
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+z-index: 1;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  border: none;
+  background-color: red;
+  color: #fff;
+
+  cursor: pointer;
+}

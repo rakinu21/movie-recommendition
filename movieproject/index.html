@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakinu Movies</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Cssfolder/genres.css" />
+    <link rel="stylesheet" href="/Cssfolder/main.css" />
+    <link rel="stylesheet" href="Cssfolder/header.css" />
+    <link rel="stylesheet" href="Cssfolder/know-more.css" />
+    <link rel="stylesheet" href="Cssfolder/comment.css">
+    <link rel="stylesheet" href="Cssfolder/popUpMovies.css">
+    <link rel="stylesheet" href="Cssfolder/DialogTrailer.css">
+    <link rel="stylesheet" href="Cssfolder/home.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="icon-genre" id="icon-genre">
+        <span  id="openNav"> <i class="fa-solid fa-bars"></i></span>
+        <span id="homebtn"> <i class="fa-solid fa-house"></i> </span>
+      </div>
+
+      <h1 class="rakinu-title">Rakinu Movies</h1>
+      <form role="search" id="form">
+        <input type="text" class="input" placeholder="Search" id="input" />
+      </form>
+    </header>
+8
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="tags" id="tags"></div>
+    </div>
+
+    <main id="main-container">
+      <section id="section" >  // mao ni ang main sa akong contaner 
+        <div class="container">
+          <div class="column">
+            <div class="card">
+              <div class="images-container">
+                <img
+                  src="images/one-piece.jpg"
+                  alt="one-piece"
+                  class="images"
+                />
+              </div>
+              <div id="title-ratings">
+                <h3 id="title">Movie Image</h3>
+                <span id="ratings">9.5</span>
+              </div>
+              <div id="play">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--dialog container for the comment video-->
+
+    <section class="know">
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" id="closebtn"
+          >&times;</a
+        >
+         
+        <!-- Overlay content -->
+       
+        <dialog id="dialog-overlay">
+          
+         
+          <button id="close-dialogBtn"><i class="fa-solid fa-xmark"></i></button>
+          <div class="overlay-content" id="overlay-content">
+          
+        </div>
+      </dialog>
+  
+        <!--MAO NI ANG MO POPUP NA MOVIES -->
+        <div class="popup-container" id="popup-container">
+         
+         
+        </div>
+      </div>
+    </section>
+
+    <canvas id=canvas></canvas>
+
+    <section class="home" id="home">
+      <div class="container-home">
+        <div class="text">
+          <div class="text-container">
+            <h1 class="text-content">welcome</h1>
+            <h2>to</h2>
+            <h3 class="text-content-h3">RakinuMovies</h3>
+          </div>
+          <div class="paragraph" onclick="">
+            <p>RakiniMovies is a premier online 
+              destination for movie enthusiasts. This
+               website offers a vast collection of films
+                spanning various genres, catering to diverse
+                 tastes. With a user-friendly interface, it provides a seamless experience for users to explore and enjoy an extensive library of 
+              movies from around the world.</p>
+          </div>
+          <div class="play-free">
+            <div class="free" id="free">
+            <i class="fa-solid fa-play"></i>
+            play
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="script.js"></script>
+   <script src="background.js"></script>
+   <script src="comment.js"></script>
+  </body>
+</html>

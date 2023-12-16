@@ -1,0 +1,112 @@
+
+.movie{
+    width: 100%;
+    height: 500px;
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-left: 20px;
+ 
+    
+}
+
+.title-movies-comment{
+    color: #131313;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+   
+}
+.comment-input{
+    width: 400px;
+    height:200px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    color:#ffff;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 20px #131313;
+    margin-top: 20px;
+}
+.submit-comment{
+    width: 100px;
+    height: 2.4rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e9c9c9;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5 ease;
+    margin-bottom: 20px;
+}
+.submit-comment:hover{
+    opacity: 0.6;
+}
+.comments{
+    width:100%;
+    height: 400px;
+    overflow-y: scroll;
+ 
+}
+.comment-tag{
+    font-size: 2rem;
+}
+/* newComment.style.color = 'red';
+newComment.style.height = '4.1rem'
+newComment.style.width = '800px'
+newComment.style.border = '2px solid'
+newComment.style.display = "flex"
+newComment.style.justifyContent = 'flex-start'
+newComment.style.alignItems = 'center'
+newComment.style.fontSize = '0.8rem' */
+* {
+	box-sizing: border-box;
+	font-family: "Montserrat";
+}
+
+.button {
+	padding: 0.5rem 1rem;
+	background-color: green;
+	border-radius: 50%;
+	width: fit-content;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+	background-color: #ff8400;
+	
+	cursor: pointer;
+}
+.reply{
+    width: 3rem;
+    height: 100%;
+    letter-spacing: 2px;
+    
+}
+#comment-dialog {
+    position: fixed;
+	border: none;
+	border-radius: 15px;
+	outline: none;
+
+    background-color: #524c4c;
+    width: 70%;
+    height: 80%;
+  z-index: 1;
+  display: none;
+ 
+}
+#comment-dialog.active{
+    display: block;
+}
+
+
